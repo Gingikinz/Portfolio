@@ -1,3 +1,4 @@
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -22,8 +23,7 @@
 
     <section id="projects">
         <div id="project-header">
-            <h2>
-                Here is some of my work,</h2>
+            <h2>Here is some of my work,</h2>
                 <p>check it out!</p>
         </div>
         <div id="project-area">
@@ -47,8 +47,45 @@
         </div>
     </section>
 
-    <section id="contact"></section>
+    <section id="contact">
+
+    </section>
+<!-- Always put script at the bottom: this keeps your page running smoothly. Best practice to put it there. -->
+    <script> 
+    // var x = (is assigned the value of) document('a'). The following thing will only apply to the first 'a' thing. //
+    var link = document.querySelector('a');
+    // Console log: will come up in the browser console.
+    console.log("Hi, I am a ginger");
+    console.error('Bad things! Oh no!');
+
+    console.log(link);
+    // uncomment following lines to see the change it would make.
+    // link.textContent = 'Mozilla Developer Network'
+    // link.href = 'https://developer.mozilla.org/en-US/' 
+
+    // var welcome = document.querySelector('#welcome-section');
+    // var para = document.createElement('p');
+    // para.textContent = 'We hope you enjoyed this page!';
+    // welcome.appendChild(para);
+
+    // var text = document.createTextNode(' - The premier source for web development knowledge.');
+    // var linkPara = document.querySelector('p');
+    // linkPara.appendChild(text);
+
+    var git = document.querySelector('#profile-link')
+    git.textContent = 'This is the link to my Github profile: click here to go there!'
+    
+    var checkOut = document.querySelector('#project-header')
+    var subtitle = document.createElement('p')
+    subtitle.textContent = "Potatoes are really good too, but they don't have much to do with this! (This text is a script experiment)"
+    checkOut.appendChild(subtitle)
+
+    </script> 
 </body>
+
+<footer>
+    <p id="footer-text">This is a preporatory portfolio</p>
+</footer>
     
 
 </html>
