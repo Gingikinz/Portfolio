@@ -13,5 +13,6 @@ fetch('https://swapi.co/api/starships/12')
   })
   .then(function(myJson) {
       name.textContent = myJason.name;
+    // see the video for this
     console.log(myJson.name);
   });
