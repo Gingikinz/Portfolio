@@ -73,8 +73,26 @@ a {
     color: white;
 }
 
+#contact {
+    background-color: #222222;
+    min-height: 80vh;
+    min-width: 100vw;
+    margin-left: -25px;
+    display: flex;
+    justify-content: center;
+    
+}
+
 #profile-link {
-    padding-top: 15px;
+    padding-top: 20vh;
+}
+
+#profile-link-text {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: "orange";
+
+
+
 }
 
 #footer-text {
