@@ -16,7 +16,7 @@ fetch('https://swapi.co/api/starships')
     // see the video for this
     // console.log(myJson);
     myJson.results.forEach( (ship) => {
-      console.log(ship.results.name)
+      console.log(ship)
     })
   });
   
