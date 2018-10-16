@@ -22,7 +22,7 @@ starships.forEach((starships) => {
 
 
 
-console.log(starships[4]);
+console.log(starships[5]);
 
 
 
