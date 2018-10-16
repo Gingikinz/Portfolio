@@ -9,6 +9,10 @@ body {
     background-color: #333333;
     padding: 5px 0px 5px 0px;
     margin: -20px -8px 0px -8px;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    /* Remember these! */
     
 }
 
@@ -18,11 +22,13 @@ nav ul {
     justify-content: space-around;
     font-size: 20px;
     list-style-type: none;
+    padding-top: 10px;
 }
 
 .navwords {
     color: #eeefee;
-    text-decoration: none;
+    text-decoration: none; 
+    
 }
 
 #welcome-section {
@@ -47,7 +53,7 @@ a {
 #projects {
     background-color: #111311;
     color: #ccccdc;
-    min-height: 100vh;
+    min-height: 120vh;
     margin: 0px -8px 0px -8px;
 }
 
@@ -71,6 +77,7 @@ a {
 
 .picture-text {
     color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 #contact {
