@@ -1,25 +1,30 @@
-let favoriteSciFi = {
-    wookie: 'Chewbacca',
-    ship: 'Enterprise',
-    captain: "Picard",
-    potato: "Russet",
-    number: 3,
-}
-let name = document.querySelector("#name")
+// let favoriteSciFi = {
+//     wookie: 'Chewbacca',
+//     ship: 'Enterprise',
+//     captain: "Picard",
+//     potato: "Russet",
+//     number: 3,
+//};
 
-fetch('https://swapi.co/api/starships')
-  .then(function(response) {
-    return response.json();
-  })
-  .then(function(myJson) {
-    // ship.textContent = myJason.xWing;
-    // see the video for this
-    // console.log(myJson);
-    myJson.results.forEach( (ship) => {
-      console.log(ship)
-    })
-  });
+
+import { starships } from '/starships.js';
+
+let name = document.querySelector("#card-list");
+console.log("potatoes are good");
+console.log(starships[5]);
+starships.forEach((starships) => {
+  let listItem = document.createElement('li')
+  listItem.textContent = starships.name
+  // textContent.appendChild(listItem)
+  console.log(starships.name)
   
+});
+
+
+
+console.log(starships[4]);
+
+
 
 
 
