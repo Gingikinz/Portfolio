@@ -7,22 +7,22 @@
 //};
 
 
-import { starships } from '/starships.js';
+import { starships } from '/assets/starships.js';
 
 let name = document.querySelector("#card-list");
 console.log("potatoes are good");
-console.log(starships[5]);
-starships.forEach((starships) => {
-  let listItem = document.createElement('li')
-  listItem.textContent = starships.name
-  // textContent.appendChild(listItem)
-  console.log(starships.name)
+console.log(starships);
+// starships.forEach((starships) => {
+//   let listItem = document.createElement('li')
+//   listItem.textContent = starships.name
+//   // textContent.appendChild(listItem)
+//   console.log(starships.name)
   
-});
+// });
 
 
 
-console.log(starships[5]);
+// console.log(starships[5]);
 
 
 
