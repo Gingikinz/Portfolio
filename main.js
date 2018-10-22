@@ -9,9 +9,23 @@
 
 import { starships } from '/assets/starships.js';
 
-let name = document.querySelector("#card-list");
+let ships = document.querySelector("#ship-list");
 console.log("potatoes are good");
 console.log(starships);
+ships.textContent = starships[12].name;
+console.log(ships);
+// starships.forEach(crew) => {
+  // console.log(starships.name)
+// })
+
+import { people } from '/assets/people.js';
+
+let person = document.querySelector("#name-list");
+// console.log(name);
+console.log(people);
+person.textContent = people[5].name;
+// var para = document.createElement('p');
+// para.textContent = "WHERE ARE THE SHIPS";
 // starships.forEach((starships) => {
 //   let listItem = document.createElement('li')
 //   listItem.textContent = starships.name
