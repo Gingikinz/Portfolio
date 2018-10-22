@@ -24,6 +24,7 @@ let person = document.querySelector("#name-list");
 // console.log(name);
 console.log(people);
 person.textContent = people[5].name;
+
 // var para = document.createElement('p');
 // para.textContent = "WHERE ARE THE SHIPS";
 // starships.forEach((starships) => {
