@@ -11,12 +11,15 @@ import { starships } from '/assets/starships.js';
 
 let ships = document.querySelector("#ship-list");
 console.log("potatoes are good");
-console.log(starships);
+console.log(starships.slice(11, 13));
 ships.textContent = starships[12].name;
 console.log(ships);
-// starships.forEach(crew) => {
-  // console.log(starships.name)
-// })
+
+starships.forEach((crew) => {
+  console.log(starships.crew);
+});
+
+
 
 import { people } from '/assets/people.js';
 
