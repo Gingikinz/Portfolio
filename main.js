@@ -7,6 +7,10 @@
 //};
 
 
+
+/* FIND SOMETHINE USEFUL AND MEANINGFUL THAT YOU WANT TO PUT ON THIS PAGE */
+
+
 import { starships } from '/assets/starships.js';
 
 let ships = document.querySelector("#ship-list");
