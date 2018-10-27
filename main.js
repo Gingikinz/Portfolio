@@ -29,8 +29,10 @@ import { people } from '/assets/people.js';
 
 let person = document.querySelector("#name-list");
 // console.log(name);
-console.log(people);
-person.textContent = people[5].name;
+  console.log(people);
+  person.textContent = people[5].name;
+ // people.textContent = "Owen Lars";
+ // people.href = 'http://vignette2.wikia.nocookie.net/moviemorgue/images/2/2f/Owenlars.jpg/revision/latest?cb=20130421142452';
 
 // var para = document.createElement('p');
 // para.textContent = "WHERE ARE THE SHIPS";

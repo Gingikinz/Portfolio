@@ -90,7 +90,7 @@ a {
     background-color: #222222;
     min-height: 100vh;
     min-width: 100vw;
-    margin-left: -25px;
+    margin-left: -20px;
     display: flex;
     justify-content: center;
     
@@ -108,8 +108,15 @@ a {
 
 .JS {
     background-color: #303036;
-    min-height: ;
-    min-width: ;
+    margin: -20px -8px 0px -8px;
+    padding: 0px;
+    min-height: 30vh;
+    display: flex;
+    justify-content: center;
+}
+
+.ship-list {
+    
 }
 
 #footer-text {
