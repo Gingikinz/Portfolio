@@ -1,6 +1,6 @@
 import { senatorData } from './assets/senators.js';
 //console.log(senators);
-
+ 
 const senators = senatorData.results[0].members;
 
 
