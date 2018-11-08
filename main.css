@@ -70,7 +70,6 @@ a {
 
  .project-tile {
     transform: rotateY(180);
-    transition-delay: 2s; 
 } 
 
 .rotate {

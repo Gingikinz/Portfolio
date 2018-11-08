@@ -30,7 +30,7 @@ console.log(males);
 
 // for (var i in state) {
 //     console.log(i);
-// 
+//  
 
 /*Who has cast the most votes? */
 
