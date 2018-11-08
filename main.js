@@ -44,6 +44,11 @@ let person = document.querySelector("#name-list");
   
 // });
 
+var rotate = document.querySelector('.project-tile');
+rotate.addEventListener( 'mouseover', function() {
+  rotate.classList.toggle('is-flipped');
+});
+
 
 
 // console.log(starships[5]);
