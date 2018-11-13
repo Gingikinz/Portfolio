@@ -40,5 +40,10 @@ button.addEventListener('click', () => {
     card.className = "card"
     card.appendChild(frontFig(newCard))
     card.appendChild(infoDiv(newCard))
-    pokeContainer.appendChild(card)
+    card.addEventListener('click', function() {
+        
+    })
+
+    pokemon.push(newCard)
 })
+
