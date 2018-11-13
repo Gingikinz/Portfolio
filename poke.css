@@ -1,0 +1,23 @@
+#container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
+}
+
+figure {
+    border: thin #343434 solid;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 3px;
+}
+
+figcaption {
+    background-color: darkslategrey;
+    color: #FFF;
+    font: bold small times;
+    padding: 2px;
+    text-align: center;
+}
