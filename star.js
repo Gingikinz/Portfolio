@@ -31,14 +31,18 @@ starships.forEach(element => {
 
 //card back
 
-starships.forEach(element => {
-    let stats = {
-        shipModel: element.model,
-        shipClass: element.starship_class,
-        shipCrew: element.crew,
-        shipDrive: element.hyperdrive_rating
-    }
-    let statsList = document.createElement('backList')
-    // console.log(stats)
-    statsList.appendChild(stats)
-})
+// starships.forEach(element => {
+//     let stats = {
+//         shipModel: element.model,
+//         shipClass: element.starship_class,
+//         shipCrew: element.crew,
+//         shipDrive: element.hyperdrive_rating
+//     }
+//     let statsList = document.createElement('backList')
+//     // console.log(stats)
+//     statsList.appendChild(stats)
+// })
+
+var cardflip = document.querySelector('figure');
+cardflip.addEventListener('mouseover', () => { cardflip.classList.toggle('flipped');
+});
