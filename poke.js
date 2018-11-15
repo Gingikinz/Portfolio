@@ -17,7 +17,7 @@ pokemon.forEach(element => {
     fig.appendChild(img)
     fig.appendChild(cap)
     pokeContainer.appendChild(fig)
-    //console.log(imgName)
+    console.log(imgName)
 })
 
 

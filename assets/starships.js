@@ -1,6 +1,6 @@
 export const starships = [
     {
-        "name": "Executor",
+        "name": "Executor", 
         "model": "Executor-class star dreadnought",
         "manufacturer": "Kuat Drive Yards, Fondor Shipyards",
         "cost_in_credits": "1143350000",
@@ -17,10 +17,11 @@ export const starships = [
         "films": [
             "https://swapi.co/api/films/2/",
             "https://swapi.co/api/films/3/"
-        ],
+        ], 
         "created": "2014-12-15T12:31:42.547000Z",
         "edited": "2017-04-19T10:56:06.685592Z",
-        "url": "https://swapi.co/api/starships/15/"
+        "url": "https://swapi.co/api/starships/15/" 
+    
     },
     {
         "name": "Sentinel-class landing craft",
