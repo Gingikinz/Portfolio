@@ -1,15 +1,24 @@
+.heading-text {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #373737;
+}
+
 #container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
-
+    justify-content: space-evenly;
 }
 
 figure {
     border: thin #343434 solid;
     display: flex;
     flex-direction: column;
+    
     margin: 5px;
     padding: 3px;
     box-shadow: 3px -3px 4px #373737;
@@ -22,3 +31,4 @@ figcaption {
     padding: 2px;
     text-align: center;
 }
+

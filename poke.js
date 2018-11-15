@@ -1,6 +1,7 @@
 import { pokemon } from './assets/pokedex.js';
 
-console.log(pokemon);
+console.log(pokemon.ename);
+console.log(pokemon)
 
 const pokeContainer = document.querySelector('#container')
 let count = 1
@@ -16,7 +17,7 @@ pokemon.forEach(element => {
     fig.appendChild(img)
     fig.appendChild(cap)
     pokeContainer.appendChild(fig)
-    console.log(imgName)
+    //console.log(imgName)
 })
 
 
