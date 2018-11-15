@@ -43,6 +43,6 @@ starships.forEach(element => {
 //     statsList.appendChild(stats)
 // })
 
-var cardflip = document.querySelector('figure');
-cardflip.addEventListener('mouseover', () => { cardflip.classList.toggle('flipped');
+var cardflip = document.querySelector('#figure');
+cardflip.addEventListener('click', () => { cardflip.classList.toggle('flipped');
 });
