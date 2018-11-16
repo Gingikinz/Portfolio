@@ -18,7 +18,6 @@ figure {
     border: thin #343434 solid;
     display: flex;
     flex-direction: column;
-    
     margin: 5px;
     padding: 3px;
     box-shadow: 3px -3px 4px #373737;
