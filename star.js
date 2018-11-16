@@ -14,7 +14,7 @@ const shipContainer = document.querySelector('#container')
 // }
 
 let images = (
-starships.forEach(element => {
+    starships.forEach(element => {
     let imgName =`${element.name}`
     let fig = document.createElement('figure')
     let cap = document.createElement('figcaption')
@@ -28,7 +28,7 @@ starships.forEach(element => {
     
 }));
 
-
+console.log(images)
 //card back
 
 const stats = (
@@ -54,8 +54,8 @@ const stats = (
     
     return statsContainer
     }));
-    console.log
-    console.log(stats)
+console.log(stats)
+
 
     // let statsList = document.createElement('backList')
     // // console.log(stats)
@@ -66,13 +66,11 @@ const stats = (
 // cardflip.addEventListener('click', () => { cardflip.classList.toggle('flipped');
 // });
 
-// starships.forEach(ship => {
-//     let card = document.createElement('div')
-//     card.className = "card"
-//     card.appendChild(images(ship))
-//     card.appendChild(stats(ship))
-//     shipContainer.appendChild(card)
-//     card.addEventListener( 'click', function () {
-//         card.classList.toggle('flipped')
-//     })
-// })
+starships.forEach(shipContainer => {
+    let card = document.querySelector('#container')
+    
+    //shipContainer.appendChild(card)
+    card.addEventListener( 'click', function () {
+        card.classList.toggle('flipped')
+    })
+})
