@@ -31,7 +31,7 @@ let images = (
 console.log(images)
 //card back
 
-const stats = (
+let stats = (
     starships.forEach(element => {
     let statsContainer = document.createElement('div')
     statsContainer.className = "figure-back"
@@ -41,20 +41,22 @@ const stats = (
     let shipCrew = document.createElement('p')
     let shipDrive = document.createElement('p')
     shipName.textContent = element.name
-    shipModel.textContent = element.model
-    shipClass.textContent = element.starship_class
-    shipCrew.textContent = element.crew
-    shipDrive.textContent = element.hyperdrive_rating
+    shipModel.textContent = `Model: ${element.model}`
+    shipClass.textContent = `Class: ${element.starship_class}`
+    shipCrew.textContent = `Crew: ${element.crew}`
+    shipDrive.textContent = `Hyperdrive rating: ${element.hyperdrive_rating}`
     statsContainer.appendChild(shipName)
     statsContainer.appendChild(shipModel)
     statsContainer.appendChild(shipClass)
     statsContainer.appendChild(shipCrew)
     statsContainer.appendChild(shipDrive)
     shipContainer.appendChild(statsContainer)
+    console.log(statsContainer)
     
     return statsContainer
     }));
 console.log(stats)
+console.log(starships.name)
 
 
     // let statsList = document.createElement('backList')
@@ -62,15 +64,7 @@ console.log(stats)
     // statsList.appendChild(stats)
 
 
-// var cardflip = document.querySelector('#figure');
-// cardflip.addEventListener('click', () => { cardflip.classList.toggle('flipped');
-// });
-
-starships.forEach(shipContainer => {
-    let card = document.querySelector('#container')
-    
-    //shipContainer.appendChild(card)
-    card.addEventListener( 'click', function () {
-        card.classList.toggle('flipped')
-    })
-})
+var thing = document.querySelector('figure');
+thing.addEventListener( 'click', function() {
+    thing.classList.toggle('flipped');
+});
