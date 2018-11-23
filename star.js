@@ -4,7 +4,7 @@ console.log(starships)
 //console.log(starships[0].name);
 
 const shipContainer = document.querySelector('#container')
-
+const statsContainer = document.querySelector('#sContainer')
 // var count = 0
 // var i = 0
 // while (i <= 25) {
@@ -33,8 +33,7 @@ starships.forEach(element => {
 
 const stats = (
     starships.forEach(element => {
-    let statsContainer = document.createElement('div')
-    statsContainer.className = "figure-back"
+    let back = document.createElement('fig2')
     let shipName = document.createElement('h2')
     let shipModel = document.createElement('p')
     let shipClass = document.createElement('p')
@@ -45,17 +44,16 @@ const stats = (
     shipClass.textContent = element.starship_class
     shipCrew.textContent = element.crew
     shipDrive.textContent = element.hyperdrive_rating
-    statsContainer.appendChild(shipName)
-    statsContainer.appendChild(shipModel)
-    statsContainer.appendChild(shipClass)
-    statsContainer.appendChild(shipCrew)
-    statsContainer.appendChild(shipDrive)
-    shipContainer.appendChild(statsContainer)
+    back.appendChild(shipName)
+    back.appendChild(shipModel)
+    back.appendChild(shipClass)
+    back.appendChild(shipCrew)
+    back.appendChild(shipDrive)
+    //shipContainer.appendChild(statsContainer)
+    statsContainer.appendChild(back)
     
-    return statsContainer
     }));
-    console.log
-    console.log(stats)
+    
 
     // let statsList = document.createElement('backList')
     // // console.log(stats)
