@@ -28,10 +28,18 @@ figure {
     cursor: pointer;
     position: relative;
     
+    
+}
+
+
+.figure-back {
+    color: grey;
+
 }
 
 #figure.flipped {
     transform: rotateY(180deg);
+
 }
 
 figcaption {

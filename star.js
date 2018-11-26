@@ -14,7 +14,7 @@ const statsContainer = document.querySelector('#sContainer')
 // }
 
 let images = (
-starships.forEach(element => {
+    starships.forEach(element => {
     let imgName =`${element.name}`
     let fig = document.createElement('figure')
     let cap = document.createElement('figcaption')
@@ -28,10 +28,10 @@ starships.forEach(element => {
     
 }));
 
-
+console.log(images)
 //card back
 
-const stats = (
+let stats = (
     starships.forEach(element => {
     let back = document.createElement('fig2')
     let shipName = document.createElement('h2')
@@ -40,37 +40,29 @@ const stats = (
     let shipCrew = document.createElement('p')
     let shipDrive = document.createElement('p')
     shipName.textContent = element.name
-    shipModel.textContent = element.model
-    shipClass.textContent = element.starship_class
-    shipCrew.textContent = element.crew
-    shipDrive.textContent = element.hyperdrive_rating
-    back.appendChild(shipName)
-    back.appendChild(shipModel)
-    back.appendChild(shipClass)
-    back.appendChild(shipCrew)
-    back.appendChild(shipDrive)
-    //shipContainer.appendChild(statsContainer)
-    statsContainer.appendChild(back)
+    shipModel.textContent = `Model: ${element.model}`
+    shipClass.textContent = `Class: ${element.starship_class}`
+    shipCrew.textContent = `Crew: ${element.crew}`
+    shipDrive.textContent = `Hyperdrive rating: ${element.hyperdrive_rating}`
+    statsContainer.appendChild(shipName)
+    statsContainer.appendChild(shipModel)
+    statsContainer.appendChild(shipClass)
+    statsContainer.appendChild(shipCrew)
+    statsContainer.appendChild(shipDrive)
+    shipContainer.appendChild(statsContainer)
+    console.log(statsContainer)
     
     }));
-    
+console.log(stats)
+console.log(starships.name)
+
 
     // let statsList = document.createElement('backList')
     // // console.log(stats)
     // statsList.appendChild(stats)
 
 
-// var cardflip = document.querySelector('#figure');
-// cardflip.addEventListener('click', () => { cardflip.classList.toggle('flipped');
-// });
-
-// starships.forEach(ship => {
-//     let card = document.createElement('div')
-//     card.className = "card"
-//     card.appendChild(images(ship))
-//     card.appendChild(stats(ship))
-//     shipContainer.appendChild(card)
-//     card.addEventListener( 'click', function () {
-//         card.classList.toggle('flipped')
-//     })
-// })
+var thing = document.querySelector('figure');
+thing.addEventListener( 'click', function() {
+    thing.classList.toggle('flipped');
+});
