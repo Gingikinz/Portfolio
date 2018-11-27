@@ -6,7 +6,7 @@ console.log(starships)
 const shipContainer = document.querySelector('#container')
 
 starships.forEach(starship => {
-let card = document.createElement('div')
+let card = document.createElement('figure')
 card.className = 'card'
     card.addEventListener( 'click', () =>  {
         card.classList.toggle('flipped');})
@@ -21,7 +21,7 @@ fig.appendChild(cap)
 
 card.appendChild(fig)
 
-let back = document.createElement('div')
+let back = document.createElement('figure')
 back.className = 'card__face card__face--back'
 let shipName = document.createElement('h2')
 let shipModel = document.createElement('p')
@@ -59,7 +59,7 @@ console.log(enterprise)
 let button = document.querySelector('#newCardButton')
 button.addEventListener('click', () => {
     let potato = document.createElement('div')
-    
+
 })
 
 

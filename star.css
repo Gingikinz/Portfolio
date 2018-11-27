@@ -17,6 +17,10 @@ body {
 }
 
 .card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     /*transform: rotateY(180deg); */
     transition: 1s;
     transform-style: preserve-3d;
