@@ -17,11 +17,6 @@ body {
 }
 
 .card {
-    border: thin #343434 solid;
-
-    margin: 5px;
-    /* padding: 3px; */
-    box-shadow: 3px -3px 3px #373737;
     /*transform: rotateY(180deg); */
     transition: 1s;
     transform-style: preserve-3d;
@@ -30,8 +25,15 @@ body {
 }
 
 .card__face {
+    border: thin #343434 solid;
+
+    margin: 5px;
+    /* padding: 3px; */
+    box-shadow: 3px -3px 3px #373737;
     position: absolute;
     backface-visibility: hidden;
+    display: flex;
+    flex-wrap: wrap;
 
 }
 
