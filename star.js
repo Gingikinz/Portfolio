@@ -23,16 +23,19 @@ card.appendChild(fig)
 
 let back = document.createElement('figure')
 back.className = 'card__face card__face--back'
+// let picture = document.createElement('img')
 let shipName = document.createElement('h2')
 let shipModel = document.createElement('p')
 let shipClass = document.createElement('p')
 let shipCrew = document.createElement('p')
 let shipDrive = document.createElement('p')
+//picture.src = `/assets/simg/SWr.png`
 shipName.textContent = starship.name
 shipModel.textContent = `Model: ${starship.model}`
 shipClass.textContent = `Class: ${starship.starship_class}`
 shipCrew.textContent = `Crew: ${starship.crew}`
 shipDrive.textContent = `Hyperdrive rating: ${starship.hyperdrive_rating}`
+//back.appendChild(picture)
 back.appendChild(shipName)
 back.appendChild(shipModel)
 back.appendChild(shipClass)
@@ -56,11 +59,17 @@ let enterprise = new spaceship("Enterprise", "Constitution", "Cruiser", "250", "
 
 console.log(enterprise)
 
-let button = document.querySelector('#newCardButton')
-button.addEventListener('click', () => {
-    let potato = document.createElement('div')
 
-})
+let bon = document.createElement("button");
+bon.innerHTML = "Another Ship?";
+
+var location = document.getElementById("newCardButton")
+location.appendChild(bon)
+
+bon.addEventListener('click', () => {
+    alert("Sir, it's the Enterprise!")
+    
+});
 
 
 
