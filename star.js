@@ -5,11 +5,9 @@ console.log(starships)
 
 const shipContainer = document.querySelector('#container')
 
-function cardMaker() {
-    
-};
+function cardMaker(x) {
 
-starships.forEach(starship => {
+x.forEach(starship => {
 let card = document.createElement('figure')
 card.className = 'card'
     card.addEventListener( 'click', () =>  {
@@ -48,6 +46,9 @@ card.appendChild(back)
 shipContainer.appendChild(card)
 
 });
+};
+
+cardMaker(starships)
 
 function spaceship(name, model, ship_class, crew, hdr){
     this.name = name
@@ -62,20 +63,28 @@ let enterprise = new spaceship("Enterprise", "Constitution", "Cruiser", "250", "
 console.log(enterprise)
 
 
-/* function Trek() {
-    let x = document.createElement('figure')
- };*/
+// function Trek() {
+//     cardMaker(enterprise)
+// };
 
+const feds = [
+    {
+    "name": "Enterprise",
+    "model": "Constitution",
+    "class": "Cruiser",
+    "crew": "~430",
+    "hdr": "<10"
+}];
 
 let bon = document.createElement("button");
-bon.innerHTML = "Another Ship?";
+bon.innerHTML = "Another Spaceship?";
 
 var location = document.getElementById("newCardButton")
 location.appendChild(bon)
 
 bon.addEventListener('click', () => {
     alert("Sir, it's the Enterprise!")
-    Trek()
+    cardMaker(feds)
 });
 
 
