@@ -5,6 +5,10 @@ console.log(starships)
 
 const shipContainer = document.querySelector('#container')
 
+function cardMaker() {
+    
+};
+
 starships.forEach(starship => {
 let card = document.createElement('figure')
 card.className = 'card'
@@ -18,9 +22,7 @@ img.src = `/assets/simg/${starship.name}.png`
 cap.textContent = starship.name
 fig.appendChild(img)
 fig.appendChild(cap)
-
 card.appendChild(fig)
-
 let back = document.createElement('figure')
 back.className = 'card__face card__face--back'
 // let picture = document.createElement('img')
@@ -60,6 +62,11 @@ let enterprise = new spaceship("Enterprise", "Constitution", "Cruiser", "250", "
 console.log(enterprise)
 
 
+/* function Trek() {
+    let x = document.createElement('figure')
+ };*/
+
+
 let bon = document.createElement("button");
 bon.innerHTML = "Another Ship?";
 
@@ -68,7 +75,7 @@ location.appendChild(bon)
 
 bon.addEventListener('click', () => {
     alert("Sir, it's the Enterprise!")
-    
+    Trek()
 });
 
 
